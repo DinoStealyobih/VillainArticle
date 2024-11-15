@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Discover trendy clothing for teens and adults. Find your style with our exclusive collections.">
+    <title>Villain Studio - Elevate Your Style</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Navigation Section -->
+    <header class="header">
+        <nav class="navbar">
+            <a href="#home" class="logo">
+                <img src="welcome logo.png" alt="Villain Studio Logo" class="logo-img">
+            </a>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#shop">Shop</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section with Video Background -->
+    <section id="home" class="hero">
+        <video autoplay muted loop class="hero-video">
+            <source src="your-video.mp4" type="video/mp4">
+        </video>
+        <div class="hero-overlay">
+            <h1 class="hero-title">Redefine Bold Style</h1>
+            <p class="hero-subtitle">Crafted for those who dare to stand apart—where every piece makes a statement.</p>
+            <a href="#shop" class="cta">Discover the Collection</a>
+        </div>
+    </section>
+
+    <!-- Product Section -->
+<section id="shop" class="product-section">
+    <h2 class="section-title">Featured Products</h2>
+
+    <!-- Product Card 1 -->
+    <div class="product-card">
+        <img src="testproduct.png" alt="Black T-shirt" class="product-image">
+        <div class="product-info">
+            <h3 class="product-name">Black T-Shirt</h3>
+            <p class="product-price">Rp.75.000</p>
+            <p class="product-description">
+                A trendy, comfortable hoodie perfect for any occasion. Available in multiple colors and sizes.
+            </p>
+            <button class="read-more-btn" onclick="toggleDescription('desc1', 'buyBtn1')">Read More</button>
+            <div class="product-full-description" id="desc1" style="display: none;">
+                <p><strong>Product Description:</strong> Classic black T-shirt crafted with premium fabric, designed for comfort and style.</p>
+                <p><strong>Material:</strong> 100% Cotton</p>
+                <p><strong>Sizes:</strong> S, M, L, XL</p>
+                <p><strong>Color:</strong> Black</p>
+                <p><strong>Care:</strong> Machine wash cold</p>
+                <a href="#" class="buy-now-btn" id="buyBtn1" style="display: none;">Buy Now</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Product Card 2 -->
+    <div class="product-card">
+        <img src="Griff.png" alt="Black Box T-Shirt Griffith Berserk" class="product-image">
+        <div class="product-info">
+            <h3 class="product-name">Black Box T-Shirt Griffith Berserk</h3>
+            <p class="product-price">Rp.75.000</p>
+            <p class="product-description">
+                Embrace your dark side with the Black Box T-Shirt featuring Griffith from Berserk.
+            </p>
+            <button class="read-more-btn" onclick="toggleDescription('desc2', 'buyBtn2')">Read More</button>
+            <div class="product-full-description" id="desc2" style="display: none;">
+                <p><strong>Product Description:</strong> This limited edition Black Box T-Shirt captures the essence of Griffith’s character from Berserk. Made for fans of dark fantasy.</p>
+                <p><strong>Material:</strong> 100% Cotton</p>
+                <p><strong>Sizes:</strong> S, M, L, XL</p>
+                <p><strong>Color:</strong> Black with thematic details</p>
+                <p><strong>Care:</strong> Machine wash cold</p>
+                <a href="#" class="buy-now-btn" id="buyBtn2" style="display: none;">Buy Now</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Product Card 3 -->
+    <div class="product-card">
+        <img src="Sauron.png" alt="Black Sweater Sauron Lord Of The Rings" class="product-image">
+        <div class="product-info">
+            <h3 class="product-name">Black Sweater Sauron Lord Of The Rings</h3>
+            <p class="product-price">Rp.75.000</p>
+            <p class="product-description">
+                Channel the Dark Lord himself with the Black Sweater featuring Sauron from Lord of the Rings.
+            </p>
+            <button class="read-more-btn" onclick="toggleDescription('desc3', 'buyBtn3')">Read More</button>
+            <div class="product-full-description" id="desc3" style="display: none;">
+                <p><strong>Product Description:</strong> For fans of The Lord of the Rings, this Black Sweater is inspired by Sauron, the Dark Lord of Mordor.</p>
+                <p><strong>Material:</strong> Cotton blend with a soft fleece lining</p>
+                <p><strong>Sizes:</strong> S, M, L, XL</p>
+                <p><strong>Color:</strong> Black with thematic details</p>
+                <p><strong>Care:</strong> Machine wash cold</p>
+                <a href="#" class="buy-now-btn" id="buyBtn3" style="display: none;">Buy Now</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- JavaScript for Read More Toggle -->
+<script>
+    function toggleDescription(descId, buyBtnId) {
+        const descElement = document.getElementById(descId);
+        const buyBtnElement = document.getElementById(buyBtnId);
+
+        if (descElement.style.display === "none") {
+            descElement.style.display = "block";
+            setTimeout(() => {
+                buyBtnElement.style.display = "inline-block";
+            }, 1000); // 1-second delay before showing "Buy Now"
+        } else {
+            descElement.style.display = "none";
+            buyBtnElement.style.display = "none";
+        }
+    }
+</script>
+
+    <!-- About Section -->
+    <section id="about" class="about-section">
+        <div class="about-content">
+            <div class="about-text">
+                <h2 class="section-title">About Us</h2>
+                <p>
+                    At <span class="brand-highlight">Villain Studio</span>, we craft clothing for individuals who love to stand out. 
+                    Our mission is to deliver style, comfort, and confidence in every stitch. Whether you’re hitting the streets 
+                    or relaxing at home, we have the perfect look for you.
+                </p>
+                <p>
+                    Inspired by creativity and boldness, our brand is for everyone ready to embrace their unique style.
+                </p>
+            </div>
+            <div class="about-image">
+                <img src="about us.png" alt="Villain Studio Logo">
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section">
+        <div class="contact-header">
+            <h2 class="section-title">Get In Touch</h2>
+            <p class="contact-subtitle">We’d love to hear from you! Whether it’s feedback, questions, or just saying hello, feel free to reach out.</p>
+        </div>
+        <div class="contact-container">
+            <div class="contact-info-card">
+                <h3>Contact Information</h3>
+                <ul class="contact-details">
+                    <li><strong>Email:</strong> <a href="mailto:info@villainstudio.com">info@villainstudio.com</a></li>
+                    <li><strong>Phone:</strong> +62 812-3456-7890</li>
+                    <li><strong>Address:</strong> Jakarta, Indonesia</li>
+                </ul>
+                <p>Follow us on:</p>
+                <div class="social-icons">
+                    <a href="#"><img src="facebook-icon.png" alt="Facebook"></a>
+                    <a href="#"><img src="instagram-icon.png" alt="Instagram"></a>
+                    <a href="#"><img src="twitter-icon.png" alt="Twitter"></a>
+                </div>
+            </div>
+            <div class="contact-form-card">
+                <form action="#" method="POST" class="contact-form">
+                    <input type="text" name="name" placeholder="Your Name" required>
+                    <input type="email" name="email" placeholder="Your Email" required>
+                    <textarea name="message" placeholder="Your Message" required></textarea>
+                    <button type="submit" class="send-btn">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="footer">
+        <p>&copy; 2024 <a href="#home" class="footer-link">Villain Studio</a>. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
